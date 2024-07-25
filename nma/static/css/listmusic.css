@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.table-container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+th.sortable:hover {
+    background-color: #e0e0e0;
+}
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+.pagination button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.pagination span {
+    padding: 10px 20px;
+}
+.edit, .view {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+.edit:hover, .view:hover {
+    color: darkblue;
+}

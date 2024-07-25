@@ -1,0 +1,78 @@
+/* Basic reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the navigation bar */
+.topnav {
+    background-color: #ffff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center the links inside the bar */
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Style for each navigation link */
+.custom-bar-item {
+    color: #000; /* Set text color to black */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Change border and text color on hover */
+.custom-bar-item:hover {
+    border-bottom: 3px solid #007BFF; /* Blue color for bottom border on hover */
+    color: #007BFF; /* Change text color on hover */
+}
+
+/* Add a separator between links */
+.custom-bar-item:not(:last-child)::after {
+    content: " |"; /* Add the separator */
+    color: #000; /* Set separator color to black */
+    margin-left: 8px; /* Space between the link text and separator */
+}
+
+/* Styles for the search bar */
+.search-container {
+    margin: 20px auto; /* Center the search bar container */
+    max-width: 500px; /* Optional: set a maximum width for the search bar */
+    display: flex;
+    justify-content: center; /* Center the search bar and button horizontally */
+}
+
+.search-input {
+    width: 100%; /* Make input take up available space */
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px 0 0 4px; /* Rounded corners for the left side */
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: 2px solid #007BFF;
+    border-left: none; /* Remove left border to blend with input */
+    border-radius: 0 4px 4px 0; /* Rounded corners for the right side */
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #0056b3; /* Slightly darker blue on hover */
+}
+
+h2, h3 {
+    margin: 20px 0; /* Add some space above and below headings */
+    text-align: center; /* Center the text */
+}

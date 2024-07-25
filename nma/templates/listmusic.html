@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/listmusic.css') }}">
+        <!--JavaScript file -->
+        <script src="{{ url_for('static', filename='js/listmusic.js') }}"></script>
+        <title>List Musicians</title>
+    </head>
+    <body>
+        <h2>NMDB</h2>
+    <div class="topnav">
+        <a href="{{ url_for('dashboard') }}" class="custom-bar-item">Dashboard</a>
+        <a href="{{ url_for('addmusic') }}" class="custom-bar-item">Add Music</a>
+        <a href="{{ url_for('listmusic') }}" class="custom-bar-item">List Musicians</a>
+        <a href="{{ url_for('logout') }}" class="custom-bar-item">Logout</a> 
+    </div>
+    <h3>List Musicians</h3>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" placeholder="Search..." class="search-input">
+        <button class="search-button">Search</button>
+    </div>
+
+    <!--list of musicians-->
+    <div class="table-container">
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th class="sortable" onclick="sortTable(0)">Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example Rows -->
+                <tr>
+                    <td>John Doe</td>
+                    <td>
+                        <a href="artistband.html?name=John%20Doe" class="view">View</a> |
+                        <a href="edit.html?name=John%20Doe" class="edit">Edit</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>
+                        <a href="artistband.html?name=Jane%20Smith" class="view">View</a> |
+                        <a href="edit.html?name=Jane%20Smith" class="edit">Edit</a>
+                    </td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="pagination">
+        <button onclick="previousPage()">Previous</button>
+        <span id="pageInfo">Page 1 of 5</span>
+        <button onclick="nextPage()">Next</button>
+    </div>
+
+    </body>
+</html>

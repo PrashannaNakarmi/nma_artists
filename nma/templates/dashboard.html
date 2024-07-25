@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <h2>NMDB</h2>
+        <div class="topnav">
+            <a href="{{ url_for('dashboard') }}" class="custom-bar-item">Dashboard</a>
+            <a href="{{ url_for('addmusic') }}" class="custom-bar-item">Add Music</a>
+            <a href="{{ url_for('addmusic') }}" class="custom-bar-item">List Musicians</a>
+            <a href="{{ url_for('logout') }}" class="custom-bar-item">Logout</a> 
+        </div>
+        <h3>Dashboard</h3>
+
+        <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" placeholder="Search..." class="search-input">
+        <button class="search-button">Search</button>
+    </div>
+
+    <!--table of musicians-->
+
+
+    </body>
+</html>

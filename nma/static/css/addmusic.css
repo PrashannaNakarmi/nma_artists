@@ -1,0 +1,213 @@
+/* Styles for the radio buttons section */
+.radio-buttons {
+    display: flex; /* Arrange items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-bottom: 10px; /* Space between radio buttons and other elements */
+}
+
+.radio-buttons p {
+    margin-right: 10px; /* Space between the "Type" label and the radio buttons */
+    font-size: 16px;
+    font-weight: bold; /* Make "Type" stand out */
+}
+
+.radio-buttons label {
+    margin-right: 20px; /* Space between individual radio buttons */
+    font-size: 16px;
+    display: flex; /* Ensure the radio button and text align properly */
+    align-items: center; /* Center the radio button and text vertically */
+}
+
+.radio-buttons input[type="radio"] {
+    margin-right: 5px; /* Space between the radio button and its label text */
+}
+
+/* Additional styles for better spacing and alignment */
+.radio-buttons label:last-of-type {
+    margin-right: 0; /* Remove margin from the last label */
+}
+
+/* Basic styling for the login forms */
+.login-form {
+    margin-top: 20px;
+}
+
+/* Hide forms initially */
+#artist-login, #band-login {
+    display: none;
+}
+
+/*for genre*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-button {
+    background-color: #0056b3;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: inline-block;
+    width: 150px; /* Adjust width as needed */
+    margin-right: 10px;
+}
+.form-group .entry-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.entry {
+    display: flex;
+    margin-bottom: 10px;
+}
+.entry input {
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    flex: 1;
+}
+.add-button-container {
+    display: flex;
+    justify-content: flex-start;
+}
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for inline form elements */
+.inline-form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.inline-form-group label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.inline-form-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Styles for social media links */
+.social-media-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between the groups */
+}
+
+.social-media-group {
+    display: flex;
+    flex-direction: row; /* Align label and input in a row */
+    align-items: center;
+}
+
+.social-media-group label {
+    width: 150px; /* Adjust width as needed */
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.social-media-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Styles for the player entry section */
+.player-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between player entries */
+}
+
+.player-entry {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the player input and description */
+}
+
+.player-entry input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.player-entry input[name="players[]"] {
+    max-width: 300px; /* Optional: Restrict max width of embed code input */
+}
+
+.player-entry input[name="playerDescriptions[]"] {
+    max-width: 300px; /* Optional: Restrict max width of description input */
+}
